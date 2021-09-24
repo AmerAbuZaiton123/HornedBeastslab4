@@ -3,7 +3,9 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import Data from './component/data.json'
+import Header from './component/Header'
 import Main from './component/Main'
+import Footer from './component/Footer'
 import FormA from './component/FormA'
 import SelectedBeast from './component/SelectedBeast';
 class App extends React.Component {
@@ -49,7 +51,7 @@ class App extends React.Component {
   render() {
     return (
       <> 
-   
+         <Header/>
         <div>
           <FormA   spData={this.state.spData}
                    HornsFun={this.HornsFun} />
@@ -79,7 +81,7 @@ class App extends React.Component {
           like={this.state.like}
           closeModelFun={this.closeModelFun}
         />
-
+       <Footer />
       </>
 
     )
